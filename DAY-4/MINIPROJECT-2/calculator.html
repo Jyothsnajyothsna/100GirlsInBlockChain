@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #calculator {
+      width: 240px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    #display {
+      height: 40px;
+      margin-bottom: 10px;
+      text-align: right;
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    .button {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <div id="display"></div>
+    <button class="button" onclick="appendToDisplay('7')">7</button>
+    <button class="button" onclick="appendToDisplay('8')">8</button>
+    <button class="button" onclick="appendToDisplay('9')">9</button>
+    <button class="button" onclick="appendToDisplay('+')">+</button>
+    <br>
+    <button class="button" onclick="appendToDisplay('4')">4</button>
+    <button class="button" onclick="appendToDisplay('5')">5</button>
+    <button class="button" onclick="appendToDisplay('6')">6</button>
+    <button class="button" onclick="appendToDisplay('-')">-</button>
+    <br>
+    <button class="button" onclick="appendToDisplay('1')">1</button>
+    <button class="button" onclick="appendToDisplay('2')">2</button>
+    <button class="button" onclick="appendToDisplay('3')">3</button>
+    <button class="button" onclick="appendToDisplay('*')">*</button>
+    <br>
+    <button class="button" onclick="appendToDisplay('0')">0</button>
+    <button class="button" onclick="appendToDisplay('.')">.</button>
+    <button class="button" onclick="calculate()">=</button>
+    <button class="button" onclick="appendToDisplay('/')">/</button>
+    <br>
+    <button class="button" onclick="clearDisplay()">Clear Display</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
